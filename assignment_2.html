@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Assignment2.css">
+</head>
+<body>
+    <form>
+        <br><br>
+        <fieldset id="fieldset1">
+            <label for="Name" id="label1">Name:</label>
+            <input type="text" id="Name" name="Name" autocomplete="on"><br><br>
+            <label for="EMail" id="label2">E-Mail:</label>
+            <input type="email" id="EMail" name="EMail" autocomplete="on"><br><br>
+            <label for="Address" id="label3"><span>Address:</span></label>
+            <textarea name="Address" cols="20" rows="5" id="Address"></textarea><br><br>
+            <label for="Postcode" id="label4">Postcode:</label>
+            <input type="text" id="Postcode" name="Postcode" autocomplete="on"><br><br>
+            <table border="1" id="table1">
+                <tr>
+                    <th><label for="Product">Product</label></th>
+                    <th><label for="PartNumber">Part Number</label></th>
+                    <th><label for="Quantity">Quantity</label></th>
+                    <th><label for="UnitPrice">Unit Price</label></th>
+                    <th><label for="Subtotal">Subtotal</label></th>
+                </tr>
+                <tr>
+                    <td><label for="StandardBox">Standard Box</label></td>
+                    <td><input type="text" id="StandardBox" name="PartNumber"></td>
+                    <td><input type="number" id="StandardBox" name="Quantity" min="0"></td>
+                    <td><input type="text" id="StandardBox" name="UnitPrice"></td>
+                    <td><input type="" id="StandardBox" name="Subtotal" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="PremiumBox">Premium Box</label></td>
+                    <td><input type="text" id="PremiumBox" name="PartNumber"></td>
+                    <td><input type="number" id="PremiumBox" name="Quantity" min="0"></td>
+                    <td><input type="text" id="PremiumBox" name="UnitPrice"></td>
+                    <td><input type="" id="PremiumBox" name="Subtotal" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="DeluxeBox">Deluxe Box</label></td>
+                    <td><input type="text" id="DeluxeBox" name="PartNumber"></td>
+                    <td><input type="number" id="DeluxeBox" name="Quantity" min="0"></td>
+                    <td><input type="text" id="DeluxeBox" name="UnitPrice"></td>
+                    <td><input type="" id="DeluxeBox" name="Subtotal" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="SuperDeluxeBox">Super Deluxe Box</label></td>
+                    <td><input type="text" id="SuperDeluxeBox" name="PartNumber"></td>
+                    <td><input type="number" id="SuperDeluxeBox" name="Quantity" min="0"></td>
+                    <td><input type="text" id="SuperDeluxeBox" name="UnitPrice"></td>
+                    <td><input type="" id="SuperDeluxeBox" name="Subtotal" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="Total">Total</label></td>
+                    <td><input type="" id="Total" name="Total" readonly></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <span>Credit Card Details</span><br><br>
+            <table id="table2">
+                <tr>
+                    <td colspan="4"><span>Card Type:</span><br><br></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="Mastercard" name="Card" value="Mastercard"></td>
+                    <td><label for="Mastercard">Master Card</label></td>
+                    <td><label for="CardNumber">Card Number</label></td>
+                    <td><input type="text" id="CardNumber" name="CardNumber" required></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="Visa" name="Card" value="Visa"></td>
+                    <td><label for="Visa">Visa</label></td>
+                    <td><label for="ExpiryDate">Expiry Date</label></td>
+                    <td><input type="date" id="ExpiryDate" name="ExpiryDate" required></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="AmericanExpress" name="Card"  
+                              value="AmericanExpress"></td>
+                    <td colspan="3"><label for="AmericanExpress">American Express</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="DinersClub" name="Card" value="DinersClub"></td>
+                    <td colspan="3"><label for="DinersClub">Diners Club</label></td>
+                </tr>
+            </table><br><br>
+            <label for="DeliveryAddress">Delivery Address</label>
+            <textarea cols="20" rows="5" id="DeliveryAddress"></textarea>
+        </fieldset>
+        <br><br>
+        <table id="table3">
+            <tr>
+                <td><button> Send Order</button></td>
+                <td><button> Clear Form</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #F0F0F0;
+    color: #333;
+    width: fit-content;
+}
+
+form {
+    margin: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+label {
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+    width: 
+
+150px;
+    display: inline-block;
+}
+
+input {
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(230, 230, 235, 0.3);
+    border-radius: 5px;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    
+}
+
+input[type=radio] {
+    width: auto;
+    height: auto;
+}
+
+table input {
+    height: 30px;
+    width: 160px;
+}
+
+button {
+    border-radius: 5px;
+    margin: auto;
+    font-size: medium;
+    width: 120px;
+    height: 34px;
+    background-color: #1F2544;
+    color: white;
+    border: none;
+}
+
+#table3 {
+    text-align: center;
+}
+
+span {
+    font-size: medium;
+    font-weight: bold;
+}
+
+#table2 label {
+    margin-left: 10px;
+}
+
+#table2 input {
+    margin-left: 5px;
+}
+
+#fieldset1 {
+    margin-bottom: 30px;
+}
+</style>

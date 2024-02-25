@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+   
+}
+.container{
+    width: 1500px;
+    margin: 100px;
+}
+.border{
+    margin: 15px;
+    border: 1px solid black;
+}
+.first{
+    border-top: 5px solid black;
+    padding-right: 25px;
+    
+}
+.first h1{
+
+    display: flex;
+    justify-content: space-around;
+    margin-left: 500px;
+    
+}
+
+.title{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ input[type="text"]{
+    width: 400px;
+    height: 30px;
+    border: 1px solid #aaa;
+    padding: 1px 10px;
+    margin: 4px 6px;
+}
+  
+
+.father-name , .first-name{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.father-name input , .first-name input{
+    width: 80%;
+}
+.father-name label , .first-name label{
+    display: flex;
+    align-items: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 8px;
+    background-color: #d6f1aa;
+  }
+  .grid-item:nth-child(5) {
+    grid-row: span 2; 
+  }
+ 
+
+.grid-item {
+    padding: 6px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .polytechnic{
+    margin: 30px 10px 22px 10px;
+  }
+
+.field{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container form .field{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.input-field label{
+    margin-right: 5px;
+    width: 100px;
+    display: inline-block;
+    
+}
+.address .input-field{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.address{
+   
+    padding: 10px 10px 10px 10px ;
+    background-color: #d6f1aa;
+}
+.declaration{
+    background-color: #d6f1aa;
+}
+.declaration h3,p{
+    display: inline-block;
+    margin-right: 50px;
+    padding: 10px;
+}
+.declaration .field{
+    padding: 10px;
+}
+.footer{margin-top: 20px;
+    border-bottom: 5px solid black;
+}
+.second{
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #d6f1aa;
+   
+}
+.grid-container input{
+    width: 50px;
+    
+}
+.grid-container .last input{
+    width: 200px;
+
+}
+.title input{
+    width: 50px;
+}
+.title .last input{
+    width: 200px;
+}
+.top{
+    margin-top: 30px;
+}
+.email input{
+    width: 500px;
+}
