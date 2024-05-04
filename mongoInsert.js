@@ -14,3 +14,47 @@ MongoClient.connect(url, function (err, db) {
     db.close();
   });
 });
+
+// // Import the MongoDB client
+// const MongoClient = require("mongodb").MongoClient;
+
+// // MongoDB connection URL
+// const url = "mongodb://localhost:27017";
+
+// // Database name and collection name
+// const dbName = "student";
+// const collectionName = "mca_stud";
+
+// // Connect to MongoDB
+// MongoClient.connect(url, function(err, client) {
+//     if (err) {
+//         console.error("Error occurred while connecting to MongoDB:", err);
+//         return;
+//     }
+
+//     console.log("Connected to MongoDB successfully");
+
+//     // Access the database
+//     const db = client.db(dbName);
+
+//     // Access the collection
+//     const collection = db.collection(collectionName);
+
+//     // Find all documents in the collection
+//     collection.find({}).toArray(function(err, documents) {
+//         if (err) {
+//             console.error("Error occurred while fetching documents:", err);
+//             client.close();
+//             return;
+//         }
+
+//         // Display the documents using a for loop
+//         console.log("Documents in the collection:");
+//         for (let i = 0; i < documents.length; i++) {
+//             console.log(documents[i]);
+//         }
+
+//         // Close the connection
+//         client.close();
+//     });
+// });
