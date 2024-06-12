@@ -4,15 +4,17 @@ import "./index.css";
 import CalcTax from "./components/TaxCalcFun";
 import reportWebVitals from "./reportWebVitals";
 import SalComp from "./components/ClsTaxClac";
+import Test from "./components/Test";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* functional components */}
-    <CalcTax eid="104" ename="saurabh" sal="550000"></CalcTax>
+    {/* <CalcTax eid="104" ename="saurabh" sal="550000"></CalcTax> */}
 
     {/* class components */}
-    <SalComp></SalComp>
+    {/* <SalComp></SalComp> */}
+    <Test />
   </React.StrictMode>
 );
 

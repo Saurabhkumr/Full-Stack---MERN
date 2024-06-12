@@ -51,5 +51,9 @@
 // };
 // module.exports = fibo;
 
-let arr = [4, 5, 6, 7, 3];
-console.log(arr.pop());
+// let arr = [4, 5, 6, 7, 3];
+// console.log(arr.pop());
+let a = 3;
+
+a = "hello";
+console.log(a);

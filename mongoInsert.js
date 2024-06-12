@@ -2,7 +2,7 @@ var MongoClient = require("mongodb").MongoClient;
 var url = "mongodb://localhost:27017";
 MongoClient.connect(url, function (err, db) {
   if (err) throw err;
-  var dbo = db.db("student");
+  var dbo = db.db("student1");
   console.log("Database created");
   var ob = [
     { sno: 12, sname: "saurabh" },
@@ -19,6 +19,7 @@ MongoClient.connect(url, function (err, db) {
 // const MongoClient = require("mongodb").MongoClient;
 
 // // MongoDB connection URL
+
 // const url = "mongodb://localhost:27017";
 
 // // Database name and collection name
